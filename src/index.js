@@ -16,6 +16,7 @@ class CircleSlider extends EventEmitter {
     // validation
     if (!this.root) {
       console.error(`CircleSlider: Didn't find any element with id ${targetId}`);
+      return;
     }
 
     // create the child elements and append them
